@@ -1,0 +1,554 @@
+:root {
+  --background-dark: #d0f0bf;
+  --background-light: #27841b;
+  --primary-color: #015a32;
+  --primary-shade-color: #7ee081;
+  --primary-dual-color: #c3f3c0;
+  --white-color: #fff;
+  --text-color: #000000;
+  --secondary-color: #ffffff;
+  --secondary-shade-color: #ec7357;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Futura";
+}
+body {
+  background-color: white;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+.navbar {
+  background-color: var(--background-dark);
+}
+
+.navbar ul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  color: white;
+  font-size: 20px;
+}
+
+.navbar ul li {
+  text-decoration: none;
+  background-color: var(--background-dark-dark);
+  margin: 20px 50px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: black; /* Base color: white */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2rem; /* Slightly larger font size */
+  font-weight: 500; /* Medium font weight */
+  padding: 10px 15px;
+  border-radius: 4px; /* Adds a subtle rounded effect */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar ul li a:hover {
+  background-color: #4caf50; /* Green background on hover */
+  color: white; /* Keep the text white */
+  text-decoration: none; /* Ensures underline doesn't appear */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+}
+
+div.titlecontent h1 {
+  background-color: white;
+  color: var(--text-color); /* Text color */
+  font-size: 2.5rem; /* Larger font size for prominence */
+  font-weight: bold; /* Bold font */
+  text-transform: uppercase; /* Uppercase for emphasis */
+  letter-spacing: 2px; /* Spacing between letters for a modern look */
+  margin: 0; /* Remove default margin */
+  line-height: 1.4;
+}
+
+div.rankings {
+  margin-left: 2%;
+  width: 1500%;
+  height: 1000px;
+  margin-right: 1%;
+  background-color: var(--background-dark);
+  border-radius: 5%;
+}
+
+div.titlecontent {
+  background-color: white; /* Background color */
+  text-align: center; /* Center-align the title */
+  padding: 100px 20px; /* Add generous padding around the title */
+  margin-bottom: 20px; /* Adjust bottom margin */
+}
+
+div.titlecontent p {
+  color: black;
+  text-align: center;
+}
+
+.top {
+  background-color: var(--background-dark);
+}
+
+div.urlsubmitter {
+  background-color: var(--background-dark);
+  width: 100%;
+  border-radius: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#url-upload {
+  font-size: 16px; /* Set the font size */
+  padding: 12px 20px; /* Add padding inside the input */
+  border-radius: 8px; /* Rounded corners */
+  border: 2px solid black; /* Set the border color */
+  color: var(--primary-color); /* Text color */
+  background-color: #fff; /* White background */
+  outline: none; /* Remove the default outline on focus */
+  transition: all 0.3s ease; /* Smooth transition for hover/focus */
+  box-sizing: border-box; /* Include padding and border in width */
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"] {
+  background: linear-gradient(
+    45deg,
+    #1d8e09,
+    #33fc25
+  ); /* Gradient background */
+  background-size: 500% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.5s;
+  color: white; /* White text */
+  font-size: 18px; /* Larger text */
+  padding: 15px 30px; /* Adequate padding */
+  border: none; /* Remove border */
+  border-radius: 50px; /* Fully rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: relative; /* To position the icon inside */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  font-weight: bold; /* Make the text bold */
+  text-transform: uppercase; /* Make text uppercase */
+  width: 50%;
+}
+
+input[type="submit"]:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  background-position: 0 0;
+}
+
+p {
+  color: red;
+}
+
+div.main {
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+}
+
+div.content {
+  background-color: var(
+    --secondary-color
+  ); /* Background color for the content box */
+  border-radius: 30px; /* Rounded corners for a soft, modern look */
+  padding: 30px; /* Generous padding around the content */
+  width: 90%; /* Make the content box more flexible */
+  max-width: 1200px; /* Limit maximum width for large screens */
+  margin: 0; /* Center the content box horizontally */
+  /* box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); Soft shadow for depth */
+}
+
+div.content h1 {
+  color: var(
+    --white-color
+  ); /* White color for the title text inside content box */
+  font-size: 2rem; /* Larger font size for better readability */
+  font-weight: 700; /* Bold font weight */
+  margin-bottom: 20px; /* Space between the title and the content */
+  text-align: left; /* Center-align the title */
+  text-transform: uppercase; /* Uppercase for a clean look */
+}
+
+div.content p {
+  color: var(--white-color); /* White text for paragraphs */
+  font-size: 1.1rem; /* Slightly larger font size for readability */
+  line-height: 1.6; /* Spacing between lines for better readability */
+  margin-bottom: 20px; /* Space between paragraphs */
+  text-align: justify; /* Justify text for a neat appearance */
+}
+
+ranking-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+.ranking-container {
+  max-width: 2000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--background-dark);
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ranking-container h1 {
+  color: black;
+}
+
+.ranking-container li {
+  color: black;
+}
+
+div.content p {
+  color: black;
+}
+
+div.content h1 {
+  color: black;
+}
+
+/* Split Screen Layout ---------------------------------------------------------------------------------------------------*/
+.split-screen {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.side {
+  width: 48%;
+  background-color: var(--background-dark);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.side:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+select:hover {
+  background-color: #eef2f5;
+}
+
+/* Company Info */
+.company-info {
+  margin-top: 20px;
+  padding: 15px;
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.company-info h3 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.company-info p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #555;
+}
+
+.score {
+  margin: 10px 0;
+  color: #000000;
+  text-align: left;
+}
+
+/* Dynamic Score Color */
+.score[data-score] {
+  font-size: 50px;
+  font-weight: bold;
+  color: hsl(calc(120 * var(--score-ratio)), 70%, 50%);
+}
+
+[data-score="5"] {
+  --score-ratio: 0.5;
+}
+
+[data-score="6"] {
+  --score-ratio: 0.6;
+}
+
+[data-score="7"] {
+  --score-ratio: 0.7;
+}
+
+[data-score="8"] {
+  --score-ratio: 0.8;
+}
+
+[data-score="9"] {
+  --score-ratio: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .split-screen {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .side {
+    width: 100%;
+  }
+}
+
+table {
+  width: 50%; /* Adjust the width to your preference */
+  max-width: 600px; /* Set a max width to prevent it from expanding */
+  border-collapse: collapse;
+  margin-left: 10%;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.flex-item {
+  background-color: white;
+  border-radius: 8px;
+  border: solid var(--background-dark);
+  border-width: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  height: 200px;
+  width: 200px; /* Fixed width for each item */
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.flex-item:hover {
+  transition: 0.5s;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  border: solid var(--primary-shade-color);
+  border-width: 5px;
+}
+
+.flex-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.flex-item .sentiment {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.flex-item .summary {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Style for the container that holds both sections */
+
+.topHeadlines {
+  display: flex;
+  justify-content: space-between; /* Space between the two columns */
+  gap: 30px; /* Adjust the space between the columns */
+  margin: 20px auto;
+  width: 50%; /* Set a maximum width */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Style for the individual headline boxes */
+.positiveHeadlines,
+.negativeHeadlines {
+  width: 48%; /* Each section takes up half the container width */
+  /* border: 2px solid #ddd;
+  border-radius: 8px; */
+  padding: 10px;
+  text-align: left;
+  /* background-color: #f9f9f9; */
+}
+
+.positiveHeadlines {
+  border-right: 2px solid #ddd;
+  border-radius: 0px;
+}
+
+/* Style for the section headers */
+.positiveHeadlines h1,
+.negativeHeadlines h1 {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.positiveHeadlines h1 {
+  color: green;
+}
+
+.negativeHeadlines h1 {
+  color: red;
+}
+
+/* Style for each headline entry */
+.headline {
+  padding: 10px;
+  margin-bottom: 10px;
+  /* background-color: #fff; */
+  border-radius: 5px;
+  /* border: 1px solid #ddd; */
+}
+
+.headline p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Centering the whole page content */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+}
+
+.name {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.name:hover {
+  color: #007bff;
+}
+
+.positiveToNegative {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Space between the two columns */
+  justify-content: space-between;
+  gap: 30px; /* Adjust the space between the columns */
+  margin: 20px auto;
+  width: 25%; /* Set a maximum width */
+  max-height: 25%;
+  height: 25%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.positiveToNegative h1 {
+  font-size: 5rem;
+}
+
+.positiveToNegative h1.positive {
+  color: var(--primary-color);
+}
+
+.positiveToNegative h1.negative {
+  color: #e61b15;
+}
+
+.positiveToNegative h1.neutral {
+  color: gray;
+}
+
+.positiveToNegative p {
+  font-size: 4rem;
+  color: #444;
+}
+
+.positive-number {
+  color: var(--primary-color); /* Green for positive number */
+  font-weight: bold;
+}
+
+.negative-number {
+  color: #e61b15; /* Red for negative number */
+  font-weight: bold;
+}
+
+.allModules {
+  display: flex;
+}
+
+.arrow {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.down-arrow {
+  transform: rotate(0deg);
+}
+
+.up-arrow {
+  transform: rotate(180deg);
+}

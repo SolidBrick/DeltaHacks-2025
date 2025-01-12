@@ -1,0 +1,117 @@
+:root {
+  --primary-color: #62a87c;
+  --primary-shade-color: #7ee081;
+  --primary-dual-color: #c3f3c0;
+  --white-color: #fff;
+  --secondary-color: #754f44;
+  --secondary-shade-color: #ec7357;
+}
+:default {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--primary-dual-color);
+}
+h1 {
+  color: var(--primary-color);
+}
+
+div.rankings {
+  margin-left: 5%;
+  height: 100%;
+  width: 20%;
+  margin-right: 10%;
+  background-color: #754f44;
+}
+
+div.titlecontent {
+  background-color: var(--primary-dual-color);
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 100px;
+}
+
+div.urlsubmitter {
+  background-color: var(--primary-shade-color);
+  width: 100%;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#url-upload {
+  font-size: 16px; /* Set the font size */
+  padding: 12px 20px; /* Add padding inside the input */
+  border-radius: 8px; /* Rounded corners */
+  border: 2px solid var(--primary-shade-color); /* Set the border color */
+  color: var(--primary-color); /* Text color */
+  background-color: #fff; /* White background */
+  outline: none; /* Remove the default outline on focus */
+  transition: all 0.3s ease; /* Smooth transition for hover/focus */
+  box-sizing: border-box; /* Include padding and border in width */
+  width: 100%;
+}
+
+input[type="submit"] {
+  background: linear-gradient(
+    45deg,
+    #1d8e09,
+    #33fc25
+  ); /* Gradient background */
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.5s;
+  color: white; /* White text */
+  font-size: 18px; /* Larger text */
+  padding: 15px 30px; /* Adequate padding */
+  border: none; /* Remove border */
+  border-radius: 50px; /* Fully rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: relative; /* To position the icon inside */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  font-weight: bold; /* Make the text bold */
+  text-transform: uppercase; /* Make text uppercase */
+  width: 50%;
+  margin-top: 10%;
+}
+
+input[type="submit"]:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  background-position: 0 0;
+}
+.ranking-container {
+  max-width: 1000px;
+  margin: 100px auto;
+  margin-left: 0px;
+  padding: 20px;
+  background-color: #dee7df;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+p {
+  color: red;
+}
+
+div.main {
+  background-color: red;
+  width: 100%;
+  display: flex;
+}
+
+div.content {
+  background-color: #754f44;
+  border-style: dashed;
+  width: 100%;
+  height: 100%;
+}
+
+
