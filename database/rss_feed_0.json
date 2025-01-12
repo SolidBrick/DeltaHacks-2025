@@ -1,0 +1,251 @@
+{
+    "rdf:RDF": {
+        "@xmlns:rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "@xmlns:prism": "http://prismstandard.org/namespaces/basic/2.0/",
+        "@xmlns:dc": "http://purl.org/dc/elements/1.1/",
+        "@xmlns:content": "http://purl.org/rss/1.0/modules/content/",
+        "@xmlns": "http://purl.org/rss/1.0/",
+        "@xmlns:admin": "http://webns.net/mvcb/",
+        "channel": {
+            "@rdf:about": "http://feeds.nature.com/nclimate/rss/current",
+            "title": "Nature Climate Change",
+            "description": "Nature Climate Change is a monthly journal dedicated to publishing high-quality research papers that describe the most significant and cutting-edge research on the causes, impacts and wider implications of global climate change. The journal publishes climate research across the physical, biological and social sciences and strives to integrate and communicate interdisciplinary research. The journal aims to play a leading role in: providing accessibility to a broad audience to research published both within and outside the journal; raising the visibility of climate change research in related research communities as well as the mainstream media; and offering a forum for discussion of the challenges faced by researchers and policy makers (and other interested parties) in understanding the complex mechanisms and impacts associated with the Earth\u2019s changing climate.",
+            "link": "http://feeds.nature.com/nclimate/rss/current",
+            "admin:generatorAgent": {
+                "@rdf:resource": "https://www.nature.com/"
+            },
+            "admin:errorReportsTo": {
+                "@rdf:resource": "mailto:feedback@nature.com"
+            },
+            "dc:publisher": "Nature Publishing Group",
+            "dc:language": "en",
+            "dc:rights": "\u00a9 2025 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.",
+            "prism:publicationName": "Nature Climate Change",
+            "prism:copyright": "\u00a9 2025 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.",
+            "prism:rightsAgent": "permissions@nature.com",
+            "image": {
+                "@rdf:resource": "https://www.nature.com/uploads/product/nclimate/rss.png"
+            },
+            "items": {
+                "rdf:Seq": {
+                    "rdf:li": [
+                        {
+                            "@rdf:resource": "https://www.nature.com/articles/s41558-024-02235-4"
+                        },
+                        {
+                            "@rdf:resource": "https://www.nature.com/articles/s41558-025-02243-y"
+                        },
+                        {
+                            "@rdf:resource": "https://www.nature.com/articles/s41558-024-02206-9"
+                        },
+                        {
+                            "@rdf:resource": "https://www.nature.com/articles/s41558-024-02225-6"
+                        },
+                        {
+                            "@rdf:resource": "https://www.nature.com/articles/s41558-024-02204-x"
+                        },
+                        {
+                            "@rdf:resource": "https://www.nature.com/articles/s41558-024-02221-w"
+                        },
+                        {
+                            "@rdf:resource": "https://www.nature.com/articles/s41558-024-02233-6"
+                        },
+                        {
+                            "@rdf:resource": "https://www.nature.com/articles/s41558-024-02205-w"
+                        }
+                    ]
+                }
+            }
+        },
+        "image": {
+            "@rdf:about": "https://www.nature.com/uploads/product/nclimate/rss.png",
+            "title": "Nature Climate Change",
+            "url": "https://www.nature.com/uploads/product/nclimate/rss.png",
+            "link": "http://feeds.nature.com/nclimate/rss/current"
+        },
+        "item": [
+            {
+                "@rdf:about": "https://www.nature.com/articles/s41558-024-02235-4",
+                "title": "Trailing edge contractions common in interior western US trees under varying disturbances",
+                "link": "https://www.nature.com/articles/s41558-024-02235-4",
+                "content:encoded": "<p>Nature Climate Change, Published online: 07 January 2025; <a href=\"https://www.nature.com/articles/s41558-024-02235-4\">doi:10.1038/s41558-024-02235-4</a></p>Climate change and disturbances are changing forest tree composition, but it is not clear if disturbances assist trees in tracking their climate ranges. This study shows that the impact of disturbance on range shifts is dependent on the tree species and type of disturbance.",
+                "dc:title": "Trailing edge contractions common in interior western US trees under varying disturbances",
+                "dc:creator": [
+                    "Katherine M. Nigro",
+                    "Kristen Pelz",
+                    "Monique E. Rocca",
+                    "Miranda D. Redmond"
+                ],
+                "dc:identifier": "doi:10.1038/s41558-024-02235-4",
+                "dc:source": "Nature Climate Change, Published online: 2025-01-07; | doi:10.1038/s41558-024-02235-4",
+                "dc:date": "2025-01-07",
+                "prism:publicationName": "Nature Climate Change",
+                "prism:doi": "10.1038/s41558-024-02235-4",
+                "prism:url": "https://www.nature.com/articles/s41558-024-02235-4"
+            },
+            {
+                "@rdf:about": "https://www.nature.com/articles/s41558-025-02243-y",
+                "title": "Publisher Correction: Brazil\u2019s coastline under attack",
+                "link": "https://www.nature.com/articles/s41558-025-02243-y",
+                "content:encoded": "<p>Nature Climate Change, Published online: 06 January 2025; <a href=\"https://www.nature.com/articles/s41558-025-02243-y\">doi:10.1038/s41558-025-02243-y</a></p>Publisher Correction: Brazil\u2019s coastline under attack",
+                "dc:title": "Publisher Correction: Brazil\u2019s coastline under attack",
+                "dc:creator": "Marcus V. Cianciaruso",
+                "dc:identifier": "doi:10.1038/s41558-025-02243-y",
+                "dc:source": "Nature Climate Change, Published online: 2025-01-06; | doi:10.1038/s41558-025-02243-y",
+                "dc:date": "2025-01-06",
+                "prism:publicationName": "Nature Climate Change",
+                "prism:doi": "10.1038/s41558-025-02243-y",
+                "prism:url": "https://www.nature.com/articles/s41558-025-02243-y"
+            },
+            {
+                "@rdf:about": "https://www.nature.com/articles/s41558-024-02206-9",
+                "title": "Climate change is projected to drive renewed spongy moth attacks on North American forests",
+                "link": "https://www.nature.com/articles/s41558-024-02206-9",
+                "content:encoded": "<p>Nature Climate Change, Published online: 06 January 2025; <a href=\"https://www.nature.com/articles/s41558-024-02206-9\">doi:10.1038/s41558-024-02206-9</a></p>For almost 30 years, an insect fungal disease has repressed defoliation caused by the spongy moth in North American hardwood forests. The fungus needs cool, moist weather, but computer models project that the effects of climate change will prevent the fungus from killing spongy moths, which could lead to a resurgence of this devastating forest pest.",
+                "dc:title": "Climate change is projected to drive renewed spongy moth attacks on North American forests",
+                "dc:identifier": "doi:10.1038/s41558-024-02206-9",
+                "dc:source": "Nature Climate Change, Published online: 2025-01-06; | doi:10.1038/s41558-024-02206-9",
+                "dc:date": "2025-01-06",
+                "prism:publicationName": "Nature Climate Change",
+                "prism:doi": "10.1038/s41558-024-02206-9",
+                "prism:url": "https://www.nature.com/articles/s41558-024-02206-9"
+            },
+            {
+                "@rdf:about": "https://www.nature.com/articles/s41558-024-02225-6",
+                "title": "Smoother sailing for Arctic ice",
+                "link": "https://www.nature.com/articles/s41558-024-02225-6",
+                "content:encoded": "<p>Nature Climate Change, Published online: 06 January 2025; <a href=\"https://www.nature.com/articles/s41558-024-02225-6\">doi:10.1038/s41558-024-02225-6</a></p>As Arctic sea ice thinned, it was thought that a weaker, more dynamic ice cover might become more heavily deformed and ridged. Now, analysis of three decades of airborne observations shows instead that the Arctic ice cover has smoothed.",
+                "dc:title": "Smoother sailing for Arctic ice",
+                "dc:creator": "Ted Maksym",
+                "dc:identifier": "doi:10.1038/s41558-024-02225-6",
+                "dc:source": "Nature Climate Change, Published online: 2025-01-06; | doi:10.1038/s41558-024-02225-6",
+                "dc:date": "2025-01-06",
+                "prism:publicationName": "Nature Climate Change",
+                "prism:doi": "10.1038/s41558-024-02225-6",
+                "prism:url": "https://www.nature.com/articles/s41558-024-02225-6"
+            },
+            {
+                "@rdf:about": "https://www.nature.com/articles/s41558-024-02204-x",
+                "title": "Climate change drives reduced biocontrol of the invasive spongy moth",
+                "link": "https://www.nature.com/articles/s41558-024-02204-x",
+                "content:encoded": "<p>Nature Climate Change, Published online: 06 January 2025; <a href=\"https://www.nature.com/articles/s41558-024-02204-x\">doi:10.1038/s41558-024-02204-x</a></p>The authors constructed an eco-climate model to project climate change impacts on populations of the spongy moth (Lymantria dispar) and its pathogen Entomophaga maimaiga. They show that climate change will sharply reduce E. maimaiga infection rates and subsequently increase spongy moth defoliation.",
+                "dc:title": "Climate change drives reduced biocontrol of the invasive spongy moth",
+                "dc:creator": [
+                    "Jiawei Liu",
+                    "Colin Kyle",
+                    "Jiali Wang",
+                    "Rao Kotamarthi",
+                    "William Koval",
+                    "Vanja Dukic",
+                    "Greg Dwyer"
+                ],
+                "dc:identifier": "doi:10.1038/s41558-024-02204-x",
+                "dc:source": "Nature Climate Change, Published online: 2025-01-06; | doi:10.1038/s41558-024-02204-x",
+                "dc:date": "2025-01-06",
+                "prism:publicationName": "Nature Climate Change",
+                "prism:doi": "10.1038/s41558-024-02204-x",
+                "prism:url": "https://www.nature.com/articles/s41558-024-02204-x"
+            },
+            {
+                "@rdf:about": "https://www.nature.com/articles/s41558-024-02221-w",
+                "title": "Perceived climate change impacts and adaptation responses in ten African mountain regions",
+                "link": "https://www.nature.com/articles/s41558-024-02221-w",
+                "content:encoded": "<p>Nature Climate Change, Published online: 06 January 2025; <a href=\"https://www.nature.com/articles/s41558-024-02221-w\">doi:10.1038/s41558-024-02221-w</a></p>Climate change is impacting mountain regions and the agricultural livelihood of residents, and will continue to do so. In this study, the authors survey farmers in ten African mountain regions to understand their perceptions of climate change impacts and identify adaptation opportunities and constraints.",
+                "dc:title": "Perceived climate change impacts and adaptation responses in ten African mountain regions",
+                "dc:creator": [
+                    "Aida Cuni-Sanchez",
+                    "Abreham B. Aneseyee",
+                    "Ghislain K. R. Baderha",
+                    "Rodrigue Batumike",
+                    "Robert Bitariho",
+                    "Gerard Imani",
+                    "Nisha Jha",
+                    "Kaiza R. Kaganzi",
+                    "Beth A. Kaplin",
+                    "Julia A. Klein",
+                    "Ana Leite",
+                    "Robert A. Marchant",
+                    "Emanuel H. Martin",
+                    "Fatuma Mcharazo",
+                    "Ben Mwangi",
+                    "Alain S. K. Ngute",
+                    "Jacques Nkengurutse",
+                    "Aline Nkurunziza",
+                    "Lydia Olaka",
+                    "Teshome Soromessa",
+                    "Romeo O. K. Tchoffo",
+                    "Jessica P. R. Thorn",
+                    "Isaac Twinomuhangi",
+                    "Martin J. P. Sullivan",
+                    "Noelia Zafra-Calvo"
+                ],
+                "dc:identifier": "doi:10.1038/s41558-024-02221-w",
+                "dc:source": "Nature Climate Change, Published online: 2025-01-06; | doi:10.1038/s41558-024-02221-w",
+                "dc:date": "2025-01-06",
+                "prism:publicationName": "Nature Climate Change",
+                "prism:doi": "10.1038/s41558-024-02221-w",
+                "prism:url": "https://www.nature.com/articles/s41558-024-02221-w"
+            },
+            {
+                "@rdf:about": "https://www.nature.com/articles/s41558-024-02233-6",
+                "title": "Climate change and terrigenous inputs decrease the efficiency of the future Arctic Ocean\u2019s biological carbon pump",
+                "link": "https://www.nature.com/articles/s41558-024-02233-6",
+                "content:encoded": "<p>Nature Climate Change, Published online: 06 January 2025; <a href=\"https://www.nature.com/articles/s41558-024-02233-6\">doi:10.1038/s41558-024-02233-6</a></p>Changes in the Arctic could impact the oceanic carbon sequestration of the region. Here the authors consider regional biogeochemistry, including coastal erosion and river inputs, to show a 40% reduction in the biological carbon pump to 2100 under climate change.",
+                "dc:title": "Climate change and terrigenous inputs decrease the efficiency of the future Arctic Ocean\u2019s biological carbon pump",
+                "dc:creator": [
+                    "Laurent Oziel",
+                    "\u00d6zg\u00fcr G\u00fcrses",
+                    "Sinhu\u00e9 Torres-Vald\u00e9s",
+                    "Clara J. M. Hoppe",
+                    "Bj\u00f6rn Rost",
+                    "Onur Karaku\u015f",
+                    "Christopher Danek",
+                    "Boris P. Koch",
+                    "Cara Nissen",
+                    "Nikolay Koldunov",
+                    "Qiang Wang",
+                    "Christoph V\u00f6lker",
+                    "Morten Iversen",
+                    "Bennet Juhls",
+                    "Judith Hauck"
+                ],
+                "dc:identifier": "doi:10.1038/s41558-024-02233-6",
+                "dc:source": "Nature Climate Change, Published online: 2025-01-06; | doi:10.1038/s41558-024-02233-6",
+                "dc:date": "2025-01-06",
+                "prism:publicationName": "Nature Climate Change",
+                "prism:doi": "10.1038/s41558-024-02233-6",
+                "prism:url": "https://www.nature.com/articles/s41558-024-02233-6"
+            },
+            {
+                "@rdf:about": "https://www.nature.com/articles/s41558-024-02205-w",
+                "title": "Late spring frost delays tree spring phenology by reducing photosynthetic productivity",
+                "link": "https://www.nature.com/articles/s41558-024-02205-w",
+                "content:encoded": "<p>Nature Climate Change, Published online: 06 January 2025; <a href=\"https://www.nature.com/articles/s41558-024-02205-w\">doi:10.1038/s41558-024-02205-w</a></p>The authors use ground-based records and remote-sensing data to show that late spring frost delays the timing of spring leaf-out in the subsequent year by reducing photosynthetic productivity. Integrating late spring frost into models can increase the accuracy of predictions of spring timings and carbon cycling.",
+                "dc:title": "Late spring frost delays tree spring phenology by reducing photosynthetic productivity",
+                "dc:creator": [
+                    "Jinmei Wang",
+                    "Hao Hua",
+                    "Jing Guo",
+                    "Xu Huang",
+                    "Xin Zhang",
+                    "Yuchuan Yang",
+                    "Danying Wang",
+                    "Xiali Guo",
+                    "Rui Zhang",
+                    "Nicholas G. Smith",
+                    "Sergio Rossi",
+                    "Josep Pe\u00f1uelas",
+                    "Philippe Ciais",
+                    "Chaoyang Wu",
+                    "Lei Chen"
+                ],
+                "dc:identifier": "doi:10.1038/s41558-024-02205-w",
+                "dc:source": "Nature Climate Change, Published online: 2025-01-06; | doi:10.1038/s41558-024-02205-w",
+                "dc:date": "2025-01-06",
+                "prism:publicationName": "Nature Climate Change",
+                "prism:doi": "10.1038/s41558-024-02205-w",
+                "prism:url": "https://www.nature.com/articles/s41558-024-02205-w"
+            }
+        ]
+    }
+}

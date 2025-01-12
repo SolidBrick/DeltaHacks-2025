@@ -1,0 +1,315 @@
+{
+    "rss": {
+        "@xmlns:dc": "http://purl.org/dc/elements/1.1/",
+        "@xmlns:content": "http://purl.org/rss/1.0/modules/content/",
+        "@xmlns:foaf": "http://xmlns.com/foaf/0.1/",
+        "@xmlns:og": "http://ogp.me/ns#",
+        "@xmlns:rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "@xmlns:schema": "http://schema.org/",
+        "@xmlns:sioc": "http://rdfs.org/sioc/ns#",
+        "@xmlns:sioct": "http://rdfs.org/sioc/types#",
+        "@xmlns:skos": "http://www.w3.org/2004/02/skos/core#",
+        "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema#",
+        "@version": "2.0",
+        "@xml:base": "https://www.climatesolutions.org/",
+        "channel": {
+            "title": "Latest News",
+            "link": "https://www.climatesolutions.org/",
+            "description": null,
+            "language": "en",
+            "item": [
+                {
+                    "title": "Climate Solutions 2025 Legislative Agenda",
+                    "link": "https://www.climatesolutions.org/article/2025-01/climate-solutions-2025-legislative-agenda",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Climate Solutions 2025 Legislative Agenda</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/nora-apter\" lang about=\"https://www.climatesolutions.org/member/nora-apter\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Nora Apter</a></span>\n<span property=\"dc:date dc:created\" content=\"2025-01-11T00:06:20+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2025-01-10T16:06:20-08:00\" title=\"Friday, January 10, 2025 - 4:06 pm\" class=\"datetime\">Fri, 01/10/2025 - 4:06 pm</time>\n</span>",
+                    "pubDate": "Sat, 11 Jan 2025 00:06:20 +0000",
+                    "dc:creator": "Nora Apter",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70486 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "This fall, the Northwest won big on climate action",
+                    "link": "https://www.climatesolutions.org/article/2024-12/fall-northwest-won-big-climate-action",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">This fall, the Northwest won big on climate action</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/jonathan-lee\" lang about=\"https://www.climatesolutions.org/member/jonathan-lee\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Jonathan Lee</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-12-20T19:36:51+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-12-20T11:36:51-08:00\" title=\"Friday, December 20, 2024 - 11:36 am\" class=\"datetime\">Fri, 12/20/2024 - 11:36 am</time>\n</span>",
+                    "pubDate": "Fri, 20 Dec 2024 19:36:51 +0000",
+                    "dc:creator": "Jonathan Lee",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70485 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Broad coalition challenges I-2066 as unconstitutional",
+                    "link": "https://www.climatesolutions.org/article/2024-12/broad-coalition-challenges-i-2066-unconstitutional",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Broad coalition challenges I-2066 as unconstitutional </span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/stephanie-noren\" lang about=\"https://www.climatesolutions.org/member/stephanie-noren\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Stephanie Noren</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-12-12T18:20:55+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-12-12T10:20:55-08:00\" title=\"Thursday, December 12, 2024 - 10:20 am\" class=\"datetime\">Thu, 12/12/2024 - 10:20 am</time>\n</span>",
+                    "pubDate": "Thu, 12 Dec 2024 18:20:55 +0000",
+                    "dc:creator": "Stephanie Noren",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70483 at https://www.climatesolutions.org"
+                    },
+                    "comments": [
+                        "https://www.climatesolutions.org/article/2024-12/broad-coalition-challenges-i-2066-unconstitutional#comments",
+                        "https://www.climatesolutions.org/article/2024-12/broad-coalition-challenges-i-2066-unconstitutional#comments"
+                    ]
+                },
+                {
+                    "title": "After a Decisive Victory on the Ballot, the CCA is Here to Stay",
+                    "link": "https://www.climatesolutions.org/article/2024-12/after-decisive-victory-ballot-cca-here-stay",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">After a Decisive Victory on the Ballot, the CCA is Here to Stay</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/tiffany-chang\" lang about=\"https://www.climatesolutions.org/member/tiffany-chang\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Tiffany Chang</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-12-11T19:53:53+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-12-11T11:53:53-08:00\" title=\"Wednesday, December 11, 2024 - 11:53 am\" class=\"datetime\">Wed, 12/11/2024 - 11:53 am</time>\n</span>",
+                    "pubDate": "Wed, 11 Dec 2024 19:53:53 +0000",
+                    "dc:creator": "Tiffany Chang",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70484 at https://www.climatesolutions.org"
+                    },
+                    "comments": [
+                        "https://www.climatesolutions.org/article/2024-12/after-decisive-victory-ballot-cca-here-stay#comments",
+                        "https://www.climatesolutions.org/article/2024-12/after-decisive-victory-ballot-cca-here-stay#comments"
+                    ]
+                },
+                {
+                    "title": "Defending climate progress in the Northwest",
+                    "link": "https://www.climatesolutions.org/article/2024-12/defending-climate-progress-northwest",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Defending climate progress in the Northwest</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/teresa-myers\" lang about=\"https://www.climatesolutions.org/member/teresa-myers\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Teresa Myers</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-12-09T23:17:18+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-12-09T15:17:18-08:00\" title=\"Monday, December 9, 2024 - 3:17 pm\" class=\"datetime\">Mon, 12/09/2024 - 3:17 pm</time>\n</span>",
+                    "pubDate": "Mon, 09 Dec 2024 23:17:18 +0000",
+                    "dc:creator": "Teresa Myers",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70482 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Flipping business fleets to zero emission",
+                    "link": "https://www.climatesolutions.org/article/2024-12/flipping-business-fleets-zero-emission",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Flipping business fleets to zero emission</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/jonathan-lee\" lang about=\"https://www.climatesolutions.org/member/jonathan-lee\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Jonathan Lee</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-12-04T01:33:15+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-12-03T17:33:15-08:00\" title=\"Tuesday, December 3, 2024 - 5:33 pm\" class=\"datetime\">Tue, 12/03/2024 - 5:33 pm</time>\n</span>",
+                    "pubDate": "Wed, 04 Dec 2024 01:33:15 +0000",
+                    "dc:creator": "Jonathan Lee",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70481 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Reasons for gratitude in the clean energy Northwest",
+                    "link": "https://www.climatesolutions.org/article/2024-11/reasons-gratitude-clean-energy-northwest",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Reasons for gratitude in the clean energy Northwest</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/jonathan-lawson\" lang about=\"https://www.climatesolutions.org/member/jonathan-lawson\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Jonathan Lawson</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-11-26T20:26:53+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-11-26T12:26:53-08:00\" title=\"Tuesday, November 26, 2024 - 12:26 pm\" class=\"datetime\">Tue, 11/26/2024 - 12:26 pm</time>\n</span>",
+                    "pubDate": "Tue, 26 Nov 2024 20:26:53 +0000",
+                    "dc:creator": "Jonathan Lawson",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70480 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Taking out the trash just got cleaner and quieter",
+                    "link": "https://www.climatesolutions.org/article/2024-11/taking-out-trash-just-got-cleaner-and-quieter",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Taking out the trash just got cleaner and quieter</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/jonathan-lee\" lang about=\"https://www.climatesolutions.org/member/jonathan-lee\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Jonathan Lee</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-11-24T16:32:04+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-11-24T08:32:04-08:00\" title=\"Sunday, November 24, 2024 - 8:32 am\" class=\"datetime\">Sun, 11/24/2024 - 8:32 am</time>\n</span>",
+                    "pubDate": "Sun, 24 Nov 2024 16:32:04 +0000",
+                    "dc:creator": "Jonathan Lee",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70478 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "The Climate Protection Program is back!",
+                    "link": "https://www.climatesolutions.org/article/2024-11/climate-protection-program-back",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">The Climate Protection Program is back!</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/juan-m-munoz-jimenez\" lang about=\"https://www.climatesolutions.org/member/juan-m-munoz-jimenez\" typeof=\"schema:Person\" property=\"schema:name\" datatype content=\"Juan M. Mu\u00f1oz Jim\u00e9nez\" class=\"username\">Juan M. Mu\u00f1oz \u2026</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-11-22T23:52:49+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-11-22T15:52:49-08:00\" title=\"Friday, November 22, 2024 - 3:52 pm\" class=\"datetime\">Fri, 11/22/2024 - 3:52 pm</time>\n</span>",
+                    "pubDate": "Fri, 22 Nov 2024 23:52:49 +0000",
+                    "dc:creator": "Juan M. Mu\u00f1oz Jim\u00e9nez",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70479 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Leading on climate in the Northwest (despite strong headwinds)",
+                    "link": "https://www.climatesolutions.org/article/2024-11/leading-climate-northwest-despite-strong-headwinds",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Leading on climate in the Northwest (despite strong headwinds)</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/gregg-small\" lang about=\"https://www.climatesolutions.org/member/gregg-small\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Gregg Small</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-11-07T23:42:31+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-11-07T15:42:31-08:00\" title=\"Thursday, November 7, 2024 - 3:42 pm\" class=\"datetime\">Thu, 11/07/2024 - 3:42 pm</time>\n</span>",
+                    "pubDate": "Thu, 07 Nov 2024 23:42:31 +0000",
+                    "dc:creator": "Gregg Small",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70477 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Lower bills AND less fossil fuel expansion? Yes, please!",
+                    "link": "https://www.climatesolutions.org/article/2024-11/lower-bills-and-less-fossil-fuel-expansion-yes-please",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Lower bills AND less fossil fuel expansion? Yes, please!</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/claire-prihoda\" lang about=\"https://www.climatesolutions.org/member/claire-prihoda\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Claire Prihoda</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-11-01T17:12:35+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-11-01T10:12:35-07:00\" title=\"Friday, November 1, 2024 - 10:12 am\" class=\"datetime\">Fri, 11/01/2024 - 10:12 am</time>\n</span>",
+                    "pubDate": "Fri, 01 Nov 2024 17:12:35 +0000",
+                    "dc:creator": "Claire Prihoda",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70476 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Stella saves big on an electric heat pump, but will others in WA enjoy the same benefits?",
+                    "link": "https://www.climatesolutions.org/article/2024-10/stella-saves-big-electric-heat-pump-will-others-wa-enjoy-same-benefits",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Stella saves big on an electric heat pump, but will others in WA enjoy the same benefits?</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/jonathan-lee\" lang about=\"https://www.climatesolutions.org/member/jonathan-lee\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Jonathan Lee</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-10-26T18:35:57+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-10-26T11:35:57-07:00\" title=\"Saturday, October 26, 2024 - 11:35 am\" class=\"datetime\">Sat, 10/26/2024 - 11:35 am</time>\n</span>",
+                    "pubDate": "Sat, 26 Oct 2024 18:35:57 +0000",
+                    "dc:creator": "Jonathan Lee",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70475 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Time to speak up for Oregon's farmworkers!",
+                    "link": "https://www.climatesolutions.org/article/2024-10/time-speak-up-oregons-farmworkers",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Time to speak up for Oregon's farmworkers!</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/jonathan-lee-and-juan-m-munoz-jimenez\" lang about=\"https://www.climatesolutions.org/member/jonathan-lee-and-juan-m-munoz-jimenez\" typeof=\"schema:Person\" property=\"schema:name\" datatype content=\"Jonathan Lee and Juan M. Mu\u00f1oz Jim\u00e9nez\" class=\"username\">Jonathan Lee a\u2026</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-10-24T23:22:53+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-10-24T16:22:53-07:00\" title=\"Thursday, October 24, 2024 - 4:22 pm\" class=\"datetime\">Thu, 10/24/2024 - 4:22 pm</time>\n</span>",
+                    "pubDate": "Thu, 24 Oct 2024 23:22:53 +0000",
+                    "dc:creator": "Jonathan Lee and Juan M. Mu\u00f1oz Jim\u00e9nez",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70474 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Study: I-2066 projected to increase household gas bills in Washington $150 per year",
+                    "link": "https://www.climatesolutions.org/article/2024-10/study-i-2066-projected-increase-household-gas-bills-washington-150-year",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Study: I-2066 projected to increase household gas bills in Washington $150 per year</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/jonathan-lawson\" lang about=\"https://www.climatesolutions.org/member/jonathan-lawson\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Jonathan Lawson</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-10-24T17:21:13+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-10-24T10:21:13-07:00\" title=\"Thursday, October 24, 2024 - 10:21 am\" class=\"datetime\">Thu, 10/24/2024 - 10:21 am</time>\n</span>",
+                    "pubDate": "Thu, 24 Oct 2024 17:21:13 +0000",
+                    "dc:creator": "Jonathan Lawson",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70473 at https://www.climatesolutions.org"
+                    },
+                    "comments": [
+                        "https://www.climatesolutions.org/article/2024-10/study-i-2066-projected-increase-household-gas-bills-washington-150-year#comments",
+                        "https://www.climatesolutions.org/article/2024-10/study-i-2066-projected-increase-household-gas-bills-washington-150-year#comments"
+                    ]
+                },
+                {
+                    "title": "Thank you for supporting Oregon\u2019s Climate Protection Program, now what\u2019s next?",
+                    "link": "https://www.climatesolutions.org/article/2024-10/thank-you-supporting-oregons-climate-protection-program-now-whats-next",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Thank you for supporting Oregon\u2019s Climate Protection Program, now what\u2019s next?</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/juan-m-munoz-jimenez\" lang about=\"https://www.climatesolutions.org/member/juan-m-munoz-jimenez\" typeof=\"schema:Person\" property=\"schema:name\" datatype content=\"Juan M. Mu\u00f1oz Jim\u00e9nez\" class=\"username\">Juan M. Mu\u00f1oz \u2026</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-10-18T23:35:50+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-10-18T16:35:50-07:00\" title=\"Friday, October 18, 2024 - 4:35 pm\" class=\"datetime\">Fri, 10/18/2024 - 4:35 pm</time>\n</span>",
+                    "pubDate": "Fri, 18 Oct 2024 23:35:50 +0000",
+                    "dc:creator": "Juan M. Mu\u00f1oz Jim\u00e9nez",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70472 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Oregonians, are you registered to vote?",
+                    "link": "https://www.climatesolutions.org/article/2024-10/oregonians-are-you-registered-vote",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Oregonians, are you registered to vote?</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/juan-m-munoz-jimenez\" lang about=\"https://www.climatesolutions.org/member/juan-m-munoz-jimenez\" typeof=\"schema:Person\" property=\"schema:name\" datatype content=\"Juan M. Mu\u00f1oz Jim\u00e9nez\" class=\"username\">Juan M. Mu\u00f1oz \u2026</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-10-10T23:26:25+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-10-10T16:26:25-07:00\" title=\"Thursday, October 10, 2024 - 4:26 pm\" class=\"datetime\">Thu, 10/10/2024 - 4:26 pm</time>\n</span>",
+                    "pubDate": "Thu, 10 Oct 2024 23:26:25 +0000",
+                    "dc:creator": "Juan M. Mu\u00f1oz Jim\u00e9nez",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70471 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Cleaner air, happy students, can't lose!",
+                    "link": "https://www.climatesolutions.org/article/2024-10/cleaner-air-happy-students-cant-lose",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Cleaner air, happy students, can't lose!</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/jonathan-lee\" lang about=\"https://www.climatesolutions.org/member/jonathan-lee\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Jonathan Lee</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-10-04T21:49:50+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-10-04T14:49:50-07:00\" title=\"Friday, October 4, 2024 - 2:49 pm\" class=\"datetime\">Fri, 10/04/2024 - 2:49 pm</time>\n</span>",
+                    "pubDate": "Fri, 04 Oct 2024 21:49:50 +0000",
+                    "dc:creator": "Jonathan Lee",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70469 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Helene: the frontlines of the climate crisis are everywhere now",
+                    "link": "https://www.climatesolutions.org/article/2024-10/helene-frontlines-climate-crisis-are-everywhere-now",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Helene: the frontlines of the climate crisis are everywhere now</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/jonathan-lawson\" lang about=\"https://www.climatesolutions.org/member/jonathan-lawson\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Jonathan Lawson</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-10-04T17:30:56+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-10-04T10:30:56-07:00\" title=\"Friday, October 4, 2024 - 10:30 am\" class=\"datetime\">Fri, 10/04/2024 - 10:30 am</time>\n</span>",
+                    "pubDate": "Fri, 04 Oct 2024 17:30:56 +0000",
+                    "dc:creator": "Jonathan Lawson",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70468 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Join Governor Inslee and fight Initiative 2117!",
+                    "link": "https://www.climatesolutions.org/article/2024-10/join-governor-inslee-and-fight-initiative-2117",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Join Governor Inslee and fight Initiative 2117!</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/joelle-robinson\" lang about=\"https://www.climatesolutions.org/member/joelle-robinson\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Jo\u00eblle Robinson</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-10-04T16:59:36+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-10-04T09:59:36-07:00\" title=\"Friday, October 4, 2024 - 9:59 am\" class=\"datetime\">Fri, 10/04/2024 - 9:59 am</time>\n</span>",
+                    "pubDate": "Fri, 04 Oct 2024 16:59:36 +0000",
+                    "dc:creator": "Jo\u00eblle Robinson",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70467 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Clean energy progress in the balance",
+                    "link": "https://www.climatesolutions.org/article/2024-09/clean-energy-progress-balance",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Clean energy progress in the balance</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/jonathan-lawson\" lang about=\"https://www.climatesolutions.org/member/jonathan-lawson\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Jonathan Lawson</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-09-29T21:27:47+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-09-29T14:27:47-07:00\" title=\"Sunday, September 29, 2024 - 2:27 pm\" class=\"datetime\">Sun, 09/29/2024 - 2:27 pm</time>\n</span>",
+                    "pubDate": "Sun, 29 Sep 2024 21:27:47 +0000",
+                    "dc:creator": "Jonathan Lawson",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70466 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Oregon business, tribal, and labor leaders unite to defend the Climate Protection Program",
+                    "link": "https://www.climatesolutions.org/article/2024-09/oregon-business-tribal-and-labor-leaders-unite-defend-climate-protection-program",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Oregon business, tribal, and labor leaders unite to defend the Climate Protection Program</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/juan-m-munoz-jimenez\" lang about=\"https://www.climatesolutions.org/member/juan-m-munoz-jimenez\" typeof=\"schema:Person\" property=\"schema:name\" datatype content=\"Juan M. Mu\u00f1oz Jim\u00e9nez\" class=\"username\">Juan M. Mu\u00f1oz \u2026</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-09-27T17:53:36+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-09-27T10:53:36-07:00\" title=\"Friday, September 27, 2024 - 10:53 am\" class=\"datetime\">Fri, 09/27/2024 - 10:53 am</time>\n</span>",
+                    "pubDate": "Fri, 27 Sep 2024 17:53:36 +0000",
+                    "dc:creator": "Juan M. Mu\u00f1oz Jim\u00e9nez",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70465 at https://www.climatesolutions.org"
+                    },
+                    "comments": [
+                        "https://www.climatesolutions.org/article/2024-09/oregon-business-tribal-and-labor-leaders-unite-defend-climate-protection-program#comments",
+                        "https://www.climatesolutions.org/article/2024-09/oregon-business-tribal-and-labor-leaders-unite-defend-climate-protection-program#comments"
+                    ]
+                },
+                {
+                    "title": "Washington climate advocates, it's time to suit up!",
+                    "link": "https://www.climatesolutions.org/article/2024-09/washington-climate-advocates-its-time-suit-up",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Washington climate advocates, it's time to suit up!</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/joelle-robinson\" lang about=\"https://www.climatesolutions.org/member/joelle-robinson\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Jo\u00eblle Robinson</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-09-26T18:30:08+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-09-26T11:30:08-07:00\" title=\"Thursday, September 26, 2024 - 11:30 am\" class=\"datetime\">Thu, 09/26/2024 - 11:30 am</time>\n</span>",
+                    "pubDate": "Thu, 26 Sep 2024 18:30:08 +0000",
+                    "dc:creator": "Jo\u00eblle Robinson",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70464 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Clean energy partnerships rising in Eastern Washington",
+                    "link": "https://www.climatesolutions.org/article/2024-09/clean-energy-partnerships-rising-eastern-washington",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Clean energy partnerships rising in Eastern Washington</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/gregg-small\" lang about=\"https://www.climatesolutions.org/member/gregg-small\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Gregg Small</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-09-25T17:51:15+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-09-25T10:51:15-07:00\" title=\"Wednesday, September 25, 2024 - 10:51 am\" class=\"datetime\">Wed, 09/25/2024 - 10:51 am</time>\n</span>",
+                    "pubDate": "Wed, 25 Sep 2024 17:51:15 +0000",
+                    "dc:creator": "Gregg Small",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70463 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Pledge to vote NO on I-2066",
+                    "link": "https://www.climatesolutions.org/article/2024-09/pledge-vote-no-i-2066",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Pledge to vote NO on I-2066</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/joelle-robinson\" lang about=\"https://www.climatesolutions.org/member/joelle-robinson\" typeof=\"schema:Person\" property=\"schema:name\" datatype class=\"username\">Jo\u00eblle Robinson</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-09-11T17:41:28+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-09-11T10:41:28-07:00\" title=\"Wednesday, September 11, 2024 - 10:41 am\" class=\"datetime\">Wed, 09/11/2024 - 10:41 am</time>\n</span>",
+                    "pubDate": "Wed, 11 Sep 2024 17:41:28 +0000",
+                    "dc:creator": "Jo\u00eblle Robinson",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70461 at https://www.climatesolutions.org"
+                    }
+                },
+                {
+                    "title": "Oregon, it's time to get involved!",
+                    "link": "https://www.climatesolutions.org/article/2024-09/oregon-its-time-get-involved",
+                    "description": "<span property=\"dc:title\" class=\"field field--name-title field--type-string field--label-hidden\">Oregon, it's time to get involved!</span>\n<span rel=\"sioc:has_creator\" class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><a title=\"View user profile.\" href=\"https://www.climatesolutions.org/member/juan-m-munoz-jimenez\" lang about=\"https://www.climatesolutions.org/member/juan-m-munoz-jimenez\" typeof=\"schema:Person\" property=\"schema:name\" datatype content=\"Juan M. Mu\u00f1oz Jim\u00e9nez\" class=\"username\">Juan M. Mu\u00f1oz \u2026</a></span>\n<span property=\"dc:date dc:created\" content=\"2024-09-09T23:13:03+00:00\" datatype=\"xsd:dateTime\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-09-09T16:13:03-07:00\" title=\"Monday, September 9, 2024 - 4:13 pm\" class=\"datetime\">Mon, 09/09/2024 - 4:13 pm</time>\n</span>",
+                    "pubDate": "Mon, 09 Sep 2024 23:13:03 +0000",
+                    "dc:creator": "Juan M. Mu\u00f1oz Jim\u00e9nez",
+                    "guid": {
+                        "@isPermaLink": "false",
+                        "#text": "70460 at https://www.climatesolutions.org"
+                    }
+                }
+            ]
+        }
+    }
+}
