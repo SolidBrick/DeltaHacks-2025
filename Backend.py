@@ -6,7 +6,6 @@ import os
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
-import tweepy
 import selenium
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -17,23 +16,18 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import feedparser
+from flask_cors import CORS
+import json
+
+app = Flask(__name__)
+
+CORS(app)
 
 load_dotenv()
 
 API_KEY = os.getenv('COHERE_API_KEY')
-TWITTER_CONSUMER_KEY = os.getenv('TWITTER_CONSUMER_KEY')
-TWITTER_CONSUMER_SECRET = os.getenv('TWITTER_CONSUMER_SECRET')
-TWITTER_ACCESS_TOKEN = os.getenv('TWITTER_ACCESS_TOKEN')
-TWITTER_ACCESS_TOKEN_SECRET = os.getenv('TWITTER_ACCESS_TOKEN_SECRET')
-TWITTER_BEARER_TOKEN = os.getenv('TWITTER_BEARER_TOKEN')
-
-# Authenticate with Twitter API
-auth = tweepy.OAuthHandler(TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET)
-auth.set_access_token(TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET)
-api = tweepy.API(auth)
 
 # Initialize Flask app and Cohere client
-app = Flask(__name__)
 cohere_client = cohere.Client(API_KEY)  # Replace with your Cohere API key
 co = cohere.ClientV2()
 co1 = cohere.Client()
@@ -174,7 +168,7 @@ def get_sentiments():
     data = {}
     for category in categories:
         data[category] = analyze(category)
-    return jsonify(data) # i don't remember if this is the correct way to conver to json
+    return json.dumps(data) # i don't remember if this is the correct way to conver to json
         
 
 def analyze(category): # i moved the api call idk how to reorganize these function definitions
@@ -274,14 +268,25 @@ def analyze(category): # i moved the api call idk how to reorganize these functi
 
             # Parse the RSS feed
             feed = feedparser.parse(rss_url)
+            
+            def clean_html(content):
+                soup = BeautifulSoup(content, "html.parser")
+                # Extract text, which removes all HTML tags
+                return soup.get_text()
 
             # Iterate through the feed entries and print the required information
+            entries = 0
+            
             for entry in feed.entries:
+                entries += 1
                 title = entry.title
                 link = entry.link
-                description = entry.description
+                description = clean_html(entry.description)
                 
                 pages.append([title, description, link])
+                
+                if entries == 5:
+                    break
                 
         return pages
     

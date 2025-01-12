@@ -1,6 +1,26 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
+onMounted(async () => {
+  try {
+    const response = await fetch("http://127.0.0.1:5000/get-sentiments", {
+      method: "GET",
+    });
+
+    // Check if the response is successful (status 2xx)
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    // Get the JSON response
+    const data = await response.json();
+    console.log(data); // Log the parsed JSON data
+  } catch (error) {
+    console.error("Error during fetch:", error);
+  }
+});
+
+
 const goalsList = ref([
   {
     title: "No Poverty",
@@ -220,10 +240,9 @@ const goalsList = ref([
 
 <template>
   <div class="titlecontent">
-    <h1>Environmental Reporter</h1>
+    <h1>UN Sustainable Development Goals</h1>
     <p>
-      Find out how eco-friendly your favourite companies are, and add one to the
-      list using Cohere's generative AI if not found!
+      Find out how the UN is progressing with its Sustainable Development Goals, in realtime.
     </p>
   </div>
   <div class="flex-container">

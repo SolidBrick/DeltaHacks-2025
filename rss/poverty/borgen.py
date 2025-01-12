@@ -1,7 +1,7 @@
 import feedparser
 
 # URL of the RSS feed
-rss_url = "https://borgenproject.org/blog/feed/"
+rss_url = "https://www.globalhungerindex.org/feeds.html?utm_source=chatgpt.com"
 
 # Parse the RSS feed
 feed = feedparser.parse(rss_url)

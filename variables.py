@@ -15,7 +15,7 @@ CLIMATE_EXAMPLES = [
     ClassifyExample(text="Global Climate Change Impact on Crops Expected Within 10 Years, NASA Study Finds", label="bad")
 ]
 
-CLIMATE_LINKS = ["https://www.audubon.org/rss.xml", "https://www.climatesolutions.org/rss/climatesolutions", "https://www.nature.com/nclimate.rss"]
+CLIMATE_LINKS = ["https://e360.yale.edu/feed.xml", "https://feeds.feedburner.com/ConservationInternationalBlog/ClimateChange", "https://grist.org/feed/"]
 
 POVERTY_EXAMPLES = [
     ClassifyExample(text="September 2024 global poverty update from the World Bank: revised estimates up to 2024", label="neutral"),
@@ -57,4 +57,4 @@ ENERGY_EXAMPLES = [
     ClassifyExample(text="Hydropower: How droughts are affecting the world's biggest renewable energy source", label="bad")
 ]
 
-ENERGY_LINKS = ["https://www.altenergymag.com/rss/news", "https://cleantechnica.com/feed/", "https://feeds.feedburner.com/RenewableEnergyNewsRssFeed"]
+ENERGY_LINKS = ["https://www.altenergymag.com/rss/news", "https://www.irena.org/iapi/rssfeed/Publications", "https://feeds.feedburner.com/RenewableEnergyNewsRssFeed"]

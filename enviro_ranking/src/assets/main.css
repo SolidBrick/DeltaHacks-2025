@@ -12,7 +12,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Futura";
+  font-family: "Poppins";
 }
 body {
   background-color: white;
@@ -57,11 +57,9 @@ h1 {
 }
 
 .navbar ul li a:hover {
-  background-color: #4caf50; /* Green background on hover */
-  color: white; /* Keep the text white */
+  color: white;
   text-decoration: none; /* Ensures underline doesn't appear */
-  transform: scale(1.1); /* Slight zoom effect on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 div.titlecontent h1 {
