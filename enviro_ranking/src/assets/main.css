@@ -1,11 +1,11 @@
 :root {
-  --background-dark: #d0f0bf;
-  --background-light: #27841b;
+  --background-dark: #4c9724;
+  --background-light: #74ab6d;
   --primary-color: #015a32;
   --primary-shade-color: #7ee081;
   --primary-dual-color: #c3f3c0;
   --white-color: #fff;
-  --text-color: #000000;
+  --text-color: #ffffff;
   --secondary-color: #ffffff;
   --secondary-shade-color: #ec7357;
 }
@@ -15,15 +15,38 @@
   font-family: "Poppins";
 }
 body {
-  background-color: white;
+  background-color: rgb(22, 22, 22);
 }
 
 h1 {
   color: var(--primary-color);
 }
 
+.brand{
+  font-size: 10vw;
+  color: #53a726;
+  transition: transform 0.3s ease-out;
+}
+
+.brand:hover{
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in;
+}
+
+.other {
+  color: rgb(255, 255, 255);
+}
+
+.tagline{
+  font-size: 2vw;
+  max-width: 55%;
+  margin-left: 22.5%;
+  color: white;
+}
+
 .navbar {
   background-color: var(--background-dark);
+  color: white;
 }
 
 .navbar ul {
@@ -32,7 +55,7 @@ h1 {
   justify-content: center;
   align-items: center;
   list-style-type: none;
-  color: white;
+  color: rgb(22, 22, 22);
   font-size: 20px;
 }
 
@@ -47,29 +70,29 @@ h1 {
 }
 
 .navbar ul li a {
-  color: black; /* Base color: white */
+  color: rgb(255, 255, 255); /* Base color: white */
   text-decoration: none; /* Remove underline */
   font-size: 1.2rem; /* Slightly larger font size */
   font-weight: 500; /* Medium font weight */
   padding: 10px 15px;
-  border-radius: 4px; /* Adds a subtle rounded effect */
+  border-radius: 25px;
   transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .navbar ul li a:hover {
-  color: white;
+  color: rgb(228, 228, 228);
   text-decoration: none; /* Ensures underline doesn't appear */
   transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 div.titlecontent h1 {
-  background-color: white;
+  background-color: rgb(22, 22, 22);
   color: var(--text-color); /* Text color */
   font-size: 2.5rem; /* Larger font size for prominence */
   font-weight: bold; /* Bold font */
   text-transform: uppercase; /* Uppercase for emphasis */
   letter-spacing: 2px; /* Spacing between letters for a modern look */
-  margin: 0; /* Remove default margin */
+  margin: 20px; /* Remove default margin */
   line-height: 1.4;
 }
 
@@ -79,23 +102,22 @@ div.rankings {
   height: 1000px;
   margin-right: 1%;
   background-color: var(--background-dark);
-  border-radius: 5%;
+  border-radius: 25px;
 }
 
 div.titlecontent {
-  background-color: white; /* Background color */
+  background-color: rgb(22, 22, 22); /* Background color */
   text-align: center; /* Center-align the title */
   padding: 100px 20px; /* Add generous padding around the title */
-  margin-bottom: 20px; /* Adjust bottom margin */
 }
 
 div.titlecontent p {
-  color: black;
+  color: white;
   text-align: center;
 }
 
 .top {
-  background-color: var(--background-dark);
+  background-color: var(--background-light);
 }
 
 div.urlsubmitter {
@@ -116,10 +138,10 @@ form {
 #url-upload {
   font-size: 16px; /* Set the font size */
   padding: 12px 20px; /* Add padding inside the input */
-  border-radius: 8px; /* Rounded corners */
-  border: 2px solid black; /* Set the border color */
+  border-radius: 25px;
+  border: 1px solid black; /* Set the border color */
   color: var(--primary-color); /* Text color */
-  background-color: #fff; /* White background */
+  background-color: rgb(22, 22, 22); /* White background */
   outline: none; /* Remove the default outline on focus */
   transition: all 0.3s ease; /* Smooth transition for hover/focus */
   box-sizing: border-box; /* Include padding and border in width */
@@ -182,7 +204,7 @@ div.content h1 {
   color: var(
     --white-color
   ); /* White color for the title text inside content box */
-  font-size: 2rem; /* Larger font size for better readability */
+  font-size: 2vw; /* Larger font size for better readability */
   font-weight: 700; /* Bold font weight */
   margin-bottom: 20px; /* Space between the title and the content */
   text-align: left; /* Center-align the title */
@@ -209,7 +231,7 @@ ranking-body {
   padding: 20px;
   background-color: var(--background-dark);
   color: black;
-  border-radius: 10px;
+  border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -241,7 +263,7 @@ div.content h1 {
 .side {
   width: 48%;
   background-color: var(--background-dark);
-  border-radius: 10px;
+  border-radius: 25px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: transform 0.2s ease;
@@ -253,7 +275,7 @@ div.content h1 {
 
 h2 {
   font-size: 1.5rem;
-  color: #444;
+  color: #ffffff;
   margin-bottom: 15px;
 }
 
@@ -263,8 +285,8 @@ select {
   margin-top: 10px;
   font-size: 1rem;
   border: 1px solid #999999;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  border-radius: 25px;
+  background-color: #000000;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -278,7 +300,7 @@ select:hover {
   margin-top: 20px;
   padding: 15px;
   /* border: 1px solid #ddd; */
-  border-radius: 8px;
+  border-radius: 25px;
   background-color: #ffffff;
 }
 
@@ -365,17 +387,16 @@ th {
 }
 
 .flex-item {
-  background-color: white;
-  border-radius: 8px;
-  border: solid var(--background-dark);
-  border-width: 5px;
+  background-color: #1d8e09;
+  border-radius: 25px;
+  border: solid #509f42;
+  border-width: 2px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
-  height: 200px;
+  height: 75px;
+  color: #ffffff;
   width: 200px; /* Fixed width for each item */
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  transition: 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -383,11 +404,9 @@ th {
 }
 
 .flex-item:hover {
-  transition: 0.5s;
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
   border: solid var(--primary-shade-color);
-  border-width: 5px;
+  transition: transform 0.2s ease;
 }
 
 .flex-item h2 {
@@ -415,9 +434,10 @@ th {
   margin: 20px auto;
   width: 50%; /* Set a maximum width */
   padding: 20px;
-  background-color: #f9f9f9;
-  border: 2px solid #ddd;
-  border-radius: 8px;
+  background-color: #27272736;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Style for the individual headline boxes */
@@ -432,8 +452,7 @@ th {
 }
 
 .positiveHeadlines {
-  border-right: 2px solid #ddd;
-  border-radius: 0px;
+  border-right: 1.5px solid #ddd;
 }
 
 /* Style for the section headers */
@@ -445,11 +464,11 @@ th {
 }
 
 .positiveHeadlines h1 {
-  color: green;
+  color: #53a726;
 }
 
 .negativeHeadlines h1 {
-  color: red;
+  color: rgb(184, 0, 0);
 }
 
 /* Style for each headline entry */
@@ -457,13 +476,13 @@ th {
   padding: 10px;
   margin-bottom: 10px;
   /* background-color: #fff; */
-  border-radius: 5px;
+  border-radius: 25px;
   /* border: 1px solid #ddd; */
 }
 
 .headline p {
   font-size: 1.1rem;
-  color: #555;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -480,11 +499,12 @@ th {
 .name {
   text-decoration: none;
   font-size: 1.2rem;
-  color: #333;
+  color: #ffffff;
 }
 
 .name:hover {
-  color: #007bff;
+  color: #e7e7e7;
+  transition: all 0.3s ease-in-out;
 }
 
 .positiveToNegative {
@@ -492,27 +512,68 @@ th {
   flex-direction: column;
   align-items: center; /* Space between the two columns */
   justify-content: space-between;
-  gap: 30px; /* Adjust the space between the columns */
-  margin: 20px auto;
-  width: 25%; /* Set a maximum width */
-  max-height: 25%;
-  height: 25%;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 2px solid #ddd;
-  border-radius: 8px;
+  margin: 20px;
+ 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #5252525e;
+  border: 1px solid #e1e1e1;
+  border-radius: 25px;
+  font-size: 1vw;
+  text-align: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkliststoo {
+ margin: 0px auto;  
+}
+
+.checklists-goals {
+  align-items: center; /* Space between the two columns */
+  justify-content: space-between; 
+  margin: 20px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #5252525e;
+  border: 1px solid #e1e1e1;
+  border-radius: 25px;
+  font-size: 1vw;
+  text-align: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checklist-goals-label {
+  color: white;
+}
+
+.checklists-goals-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+
+  color: white;
+  padding: 13px 30px;
+  background-color: #5252525e;
+  border: 1px solid #e1e1e1;
+  border-radius: 25px;
+  font-size: 1.2vw;
+  max-width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .positiveToNegative h1 {
-  font-size: 5rem;
+  font-size: 5vw;
 }
 
 .positiveToNegative h1.positive {
-  color: var(--primary-color);
+  color: #53a726;
 }
 
 .positiveToNegative h1.negative {
-  color: #e61b15;
+  color: rgb(184, 0, 0);
 }
 
 .positiveToNegative h1.neutral {
@@ -520,17 +581,17 @@ th {
 }
 
 .positiveToNegative p {
-  font-size: 4rem;
-  color: #444;
+  font-size: 4vw;
+  color: #ffffff;
 }
 
 .positive-number {
-  color: var(--primary-color); /* Green for positive number */
+  color: #53a726; /* Green for positive number */
   font-weight: bold;
 }
 
 .negative-number {
-  color: #e61b15; /* Red for negative number */
+  color: rgb(184, 0, 0); /* Red for negative number */
   font-weight: bold;
 }
 
@@ -549,4 +610,48 @@ th {
 
 .up-arrow {
   transform: rotate(180deg);
+}
+
+/* Checklist Styles */
+
+
+.checklist-items {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.checklist-label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checklist-checkbox {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.checklist-item span {
+  color: #333;
+  line-height: 1.5;
+}
+
+.checklist-item label:hover {
+  color: #007bff;
+}
+
+.checklist-item input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.checklist-item input[type="checkbox"]:not(:checked) + span {
+  font-weight: normal;
 }

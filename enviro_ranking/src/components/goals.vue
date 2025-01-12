@@ -15,239 +15,196 @@ onMounted(async () => {
 
     // Get the JSON response
     const data = await response.json();
+
+    //povertyArticles(forEach(page =>
+    //  ppovertyStore.push
+    //      {
+    //        name:[0]
+    //         summary:page[1]
+      //        link: page[2]
+     //       }
+    // )
+
+    
     console.log(data); // Log the parsed JSON data
+    const povertyArticles = data.poverty;
+    const climateArticles = data.climate;
+    const energyArticles = data.energy;
+    let posPovertyStore = Array(0);
+    let negPovertyStore = Array(0);
+    let posClimateStore = Array(0);
+    let negClimateStore = Array(0);
+    let posEnergyStore = Array(0);
+    let negEnergyStore = Array(0);
+    let povPosCount = 0;
+    let povNegCount = 0;
+    let climatePosCount = 0;
+    let climateNegCount = 0;
+    let energyPosCount = 0;
+    let energyNegCount = 0;
+
+    povertyArticles.forEach(page => {
+      const title = page[0];
+      const desc = page[1];
+      const url = page[2];
+      if (page[3] == "good") {
+        if (povPosCount < 5) {
+          posPovertyStore.push
+          ({
+            name:title,
+            summary:desc,
+            link:url,
+          });
+        }
+        povPosCount += 1;
+      } else {
+        if (povNegCount < 5) {
+          negPovertyStore.push
+          ({
+            name:title,
+            summary:desc,
+            link:url
+          });
+        }
+        povNegCount += 1;
+      }
+    })
+    
+    climateArticles.forEach(page => {
+      const title = page[0];
+      const desc = page[1];
+      const url = page[2];
+      if (page[3] == "good") {
+        if (climatePosCount < 5) {
+          posClimateStore.push
+          ({
+            name:title,
+            summary:desc,
+            link:url,
+          });
+        }
+        climatePosCount += 1;
+      } else {
+        if (climateNegCount < 5) {
+          negClimateStore.push
+          ({
+            name:title,
+            summary:desc,
+            link:url
+          });
+        }
+        climateNegCount += 1;
+      }
+    })
+
+    energyArticles.forEach(page => {
+      const title = page[0];
+      const desc = page[1];
+      const url = page[2];
+      if (page[3] == "good") {
+        if (energyPosCount < 5) {
+          posEnergyStore.push
+          ({
+            name:title,
+            summary:desc,
+            link:url,
+          });
+        }
+        energyPosCount += 1;
+      } else {
+        if (energyNegCount < 5) {
+          negEnergyStore.push
+          ({
+            name:title,
+            summary:desc,
+            link:url
+          });
+        }
+        energyNegCount += 1;
+      }
+    })
+
+    
+    const newGoalPov = {
+      title: "No Poverty",
+      name: "No Poverty",
+      link: "/nopoverty",
+      posScore: povPosCount, // Positive score
+      negScore: povNegCount, // Negative score
+      posheadlines: posPovertyStore,
+      negheadlines: negPovertyStore,
+      summary: "This goal is about ending poverty in all its forms everywhere.",
+      /* checklist of personal actions an individual can take to help achieve this goal */
+      checklist: [
+        "Donate to a charity that helps people in poverty",
+        "Volunteer at a local food bank",
+        "Buy a fair trade product",
+        "Read five articles about poverty",
+      ],
+    };
+    const newGoalClim = {
+      title: "Climate Action",
+      name: "Climate Action",
+      link: "/nopoverty",
+      posScore: climatePosCount, // Positive score
+      negScore: climateNegCount, // Negative score
+      posheadlines: posClimateStore,
+      negheadlines: negClimateStore,
+      summary: "This goal is about taking urgent action to combat climate change and its impacts.",
+            /* checklist of personal actions an individual can take to help achieve this goal */
+      checklist: [
+        "Recycle one time a day",
+        "Use public transportation to commute",
+        "Plant one tree and support reforestation efforts",
+        "Check for improperly sealed doors and windows"
+      ],
+    };
+    const newGoalEnergy = {
+      title: "Affordable and Clean Energy",
+      name: "Affordable and Clean Energy",
+      link: "/nopoverty",
+      posScore: energyPosCount, // Positive score
+      negScore: energyNegCount, // Negative score
+      posheadlines: posEnergyStore,
+      negheadlines: negEnergyStore,
+      summary: "This goal is about ensuring access to affordable, reliable, sustainable and modern energy for all.",
+            /* checklist of QUANTIFIABLE AND SPECIFIC personal actions an individual can take to help achieve this goal */
+      checklist: [
+        "Switch to LED light bulbs",
+        "Unplug electronics when not in use",
+        "Use a programmable thermostat",
+        "Drive less once a day",
+        "Switch to green energy providers",
+      ],
+    };
+    goalsList.value.push(newGoalPov);
+    goalsList.value.push(newGoalClim);
+    goalsList.value.push(newGoalEnergy);
   } catch (error) {
     console.error("Error during fetch:", error);
   }
 });
 
-
-const goalsList = ref([
-  {
-    title: "No Poverty",
-    name: "No Poverty",
-    link: "/nopoverty",
-    posScore: 42, // Positive score
-    negScore: 39, // Negative score
-    posheadlines: [
-      {
-        name: "No Poverty - Great Progress",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "No Poverty - Achievements",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "No Poverty - New Initiatives",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "No Poverty - World Leaders Praise",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "No Poverty - Global Awareness Grows",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-    ],
-    negheadlines: [
-      {
-        name: "No Poverty - Areas Still Struggling",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "No Poverty - Underfunding Concerns",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "No Poverty - Economic Downturn Affects Progress",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "No Poverty - Political Challenges",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "No Poverty - Slow Policy Implementation",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-    ],
-  },
-  {
-    title: "Climate Change",
-    name: "Climate Change",
-    link: "/nopoverty",
-    posScore: 12, // Positive score
-    negScore: 50, // Negative score
-    posheadlines: [
-      {
-        name: "Climate Change - Great Progress",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "Climate Change - Achievements",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "Climate Change - New Initiatives",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "Climate Change - World Leaders Praise",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "Climate Change - Global Awareness Grows",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-    ],
-    negheadlines: [
-      {
-        name: "Climate Change - Areas Still Struggling",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "Climate Change - Underfunding Concerns",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "Climate Change - Economic Downturn Affects Progress",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "Climate Change - Political Challenges",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "Climate Change - Slow Policy Implementation",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-    ],
-  },
-  {
-    title: "Clean Energy",
-    name: "Clean Energy",
-    link: "/nopoverty",
-    posScore: 42, // Positive score
-    negScore: 39, // Negative score
-    posheadlines: [
-      {
-        name: "Clean Energy - Great Progress",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "Clean Energy - Achievements",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "Clean Energy - New Initiatives",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "Clean Energy - World Leaders Praise",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "Clean Energy- Global Awareness Grows",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-    ],
-    negheadlines: [
-      {
-        name: "Clean Energy - Areas Still Struggling",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "Clean Energy - Underfunding Concerns",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "Clean Energy - Economic Downturn Affects Progress",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "Clean Energy - Political Challenges",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-      {
-        name: "Clean Energy - Slow Policy Implementation",
-        link: "https://great.com",
-        summary:
-          "this is a summary Minim fugiat culpa amet veniam sint laboris minim magna laboris. Elit sint adipisicing sit id quis magna incididunt commodo ea deserunt dolor ad dolor et. Deserunt mollit enim irure elit et fugiat et reprehenderit sit eu amet esse tempor non exercitation. Aliqua ut est exercitation laboris dolore exercitation. Mollit ullamco officia officia consequat ullamco elit incididunt laborum veniam voluptate et ut duis aliqua nostrud. Excepteur dolore enim laboris esse. Fugiat tempor nostrud enim elit elit reprehenderit dolor occaecat quis pariatur aliqua.",
-      },
-    ],
-  },
-]);
+const goalsList = ref([]);
 </script>
 
 <template>
   <div class="titlecontent">
-    <h1>UN Sustainable Development Goals</h1>
-    <p>
-      Find out how the UN is progressing with its Sustainable Development Goals, in realtime.
-    </p>
+    <div class = "brand">
+    Eco<span class = "other">Dash</span>  
+    </div>
+  <div class = "tagline">
+      Find out how the UN is progressing with its Sustainable Development Goals,
+      in realtime.
+    </div>
   </div>
   <div class="flex-container">
-    <div v-for="(goal, index) in goalsList" :key="index" class="flex-item" :style="{ backgroundImage: `url(${goal.image})` }" >
+    <div
+      v-for="(goal, index) in goalsList"
+      :key="index"
+      class="flex-item"
+      :style="{ backgroundImage: `url(${goal.image})` }"
+    >
       <router-link
         class="name"
         :to="{
@@ -258,6 +215,8 @@ const goalsList = ref([
             negScore: goal.negScore,
             posHeadlines: JSON.stringify(goal.posheadlines),
             negHeadlines: JSON.stringify(goal.negheadlines),
+            summary: goal.summary,
+            checklist: JSON.stringify(goal.checklist),
           },
         }"
       >

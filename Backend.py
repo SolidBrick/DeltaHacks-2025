@@ -160,8 +160,6 @@ def analyze_link():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
     
-# SELENIUM SCRAPE HEADLINES IN NEWS TAB AFTER SEARCHING [COMPANY] ENVIRONMENTAL REPORT
-
 @app.route('/get-sentiments', methods=['GET'])
 def get_sentiments():
     categories = ["climate", "energy", "poverty"]
@@ -285,7 +283,7 @@ def analyze(category): # i moved the api call idk how to reorganize these functi
                 
                 pages.append([title, description, link])
                 
-                if entries == 5:
+                if entries == 15:
                     break
                 
         return pages

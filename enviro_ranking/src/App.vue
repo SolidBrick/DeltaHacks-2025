@@ -1,3 +1,8 @@
+<script setup>
+
+</script>
+
+
 <template>
   <div class="top">
     <nav class="navbar">

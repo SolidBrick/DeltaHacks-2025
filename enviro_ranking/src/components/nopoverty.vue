@@ -9,10 +9,14 @@ const posScore = ref(0);
 const negScore = ref(0);
 const posheadlines = ref([]);
 const negheadlines = ref([]);
+const summary = ref("");
+const checklist = ref([]);
 
 // On component mount, get data from the route query
 onMounted(() => {
+  summary.value = route.query.summary || "No summary provided"; // Default summary if not provided
   title.value = route.query.title || "No Poverty"; // Default title if not provided
+  checklist.value = JSON.parse(route.query.checklist || "[]"); // Default to empty array if not provided
   posScore.value = parseInt(route.query.posScore) || 0; // Default to 0 if not provided
   negScore.value = parseInt(route.query.negScore) || 0; // Default to 0 if not provided
 
@@ -66,11 +70,12 @@ const negativeHeadlines = computed(() => {
 <template>
   <div class="titlecontent">
     <h1>{{ title }}</h1>
-    <p>Find out the current news relating to {{ title }}</p>
+    <p>{{summary}}</p>
   </div>
   <div class="allModules">
+    <div class = "checkliststoo">
     <div class="positiveToNegative">
-      <h2>This topic is mainly</h2>
+      <h2>This topic is mainly:</h2>
       <h1
         :class="{
           positive: posScore > negScore + 2,
@@ -90,7 +95,25 @@ const negativeHeadlines = computed(() => {
         <span class="positive-number">{{ posScore }}</span> |
         <span class="negative-number">{{ negScore }}</span>
       </p>
+    
     </div>
+    <div class="checklists-goals">
+        <h2>Checklist</h2>
+        <ul class="checklist-goals-items">
+            <li
+              v-for="(item, index) in checklist"
+              :key="index"
+              class="checklists-goals-items"
+            >
+              <label class="checklist-goals-label">
+                <input type="checkbox" class="checklist-checkbox" />
+                <span>{{ item }}</span>
+              </label>
+            </li>
+          </ul>
+      </div>
+    </div>
+    
     <div class="topHeadlines">
       <div class="positiveHeadlines">
         <h1>Positive Headlines</h1>
@@ -107,7 +130,7 @@ const negativeHeadlines = computed(() => {
                 'down-arrow': visiblePosIndex !== index,
               }"
             >
-              &#8595; </span
+            ▸ </span
             >{{ headline.name }}
           </p>
           <div v-show="visiblePosIndex === index">
@@ -132,7 +155,7 @@ const negativeHeadlines = computed(() => {
                 'down-arrow': visibleNegIndex !== index,
               }"
             >
-              &#8595; </span
+            ▸ </span
             >{{ headline.name }}
           </p>
           <div v-show="visibleNegIndex === index">
@@ -155,10 +178,10 @@ const negativeHeadlines = computed(() => {
 }
 
 .down-arrow {
-  transform: rotate(-90deg);
+  transform: rotate(0deg);
 }
 
 .up-arrow {
-  transform: rotate(0deg);
+  transform: rotate(90deg);
 }
 </style>

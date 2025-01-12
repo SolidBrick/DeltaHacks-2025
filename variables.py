@@ -12,10 +12,10 @@ CLIMATE_EXAMPLES = [
     ClassifyExample(text="Climate change indicators reached record levels in 2023: WMO", label="bad"),
     ClassifyExample(text="Climate change threatens progress across sustainable development, warns new UN report", label="bad"),
     ClassifyExample(text="Climate Change Is Speeding Toward Catastrophe. The Next Decade Is Crucial, U.N. Panel Says. (Published 2023)", label="bad"),
-    ClassifyExample(text="Global Climate Change Impact on Crops Expected Within 10 Years, NASA Study Finds", label="bad")
+    ClassifyExample(text="Global Climate Change Impact on Crops Expected Within 10 Years, NASA Study Finds", label="bad"),
 ]
 
-CLIMATE_LINKS = ["https://e360.yale.edu/feed.xml", "https://feeds.feedburner.com/ConservationInternationalBlog/ClimateChange", "https://grist.org/feed/"]
+CLIMATE_LINKS = ["https://e360.yale.edu/feed.xml", "https://feeds.feedburner.com/ConservationInternationalBlog/ClimateChange", "https://grist.org/feed/", "https://borgenproject.org/blog/feed/"]
 
 POVERTY_EXAMPLES = [
     ClassifyExample(text="September 2024 global poverty update from the World Bank: revised estimates up to 2024", label="neutral"),
@@ -54,7 +54,8 @@ ENERGY_EXAMPLES = [
     ClassifyExample(text="Global progress on affordable and clean energy must be accelerated in order to close energy gap, new report says", label="bad"),
     ClassifyExample(text="Basic energy access lags amid renewable opportunities, new report shows", label="bad"),
     ClassifyExample(text="Analysis: Global CO2 emissions will reach new high in 2024 despite slower growth", label="bad"),
-    ClassifyExample(text="Hydropower: How droughts are affecting the world's biggest renewable energy source", label="bad")
+    ClassifyExample(text="Hydropower: How droughts are affecting the world's biggest renewable energy source", label="bad"),
+    ClassifyExample(text="BLUETTI Unveils Apex 300 and EnergyPro 6K at CES 2025, Highlighting Brand Refinement Strategy for 2025", label="good")
 ]
 
 ENERGY_LINKS = ["https://www.altenergymag.com/rss/news", "https://www.irena.org/iapi/rssfeed/Publications", "https://feeds.feedburner.com/RenewableEnergyNewsRssFeed"]
