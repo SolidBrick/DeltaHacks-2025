@@ -25,3 +25,16 @@ EcoDash is a web platform that aggregates recent climate-related news and evalua
 2. Articles are sent to a Flask backend for processing.
 3. The backend calls the Cohere API, where a fine-tuned AI model evaluates each article’s impact on sustainability progress.
 4. Results are returned to the Vue frontend and displayed in a clear, categorized format for users.
+
+
+
+### Dashboard screen
+<p align="center">
+  <img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/209/296/datas/gallery.jpg" alt="Dashboard screen">
+</p>
+
+### Overview of daily SDG progress
+<p align="center">
+  <img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/209/297/datas/gallery.jpg" alt="Overview of daily SDG progress">
+</p>
+
